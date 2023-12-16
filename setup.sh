@@ -43,7 +43,7 @@ pip install -r /kaggle/working/PhishIntention/requirements.txt
 
 # Install PhishIntention as a package
 pip install -v .
-package_location=$(conda run -n "myenv" pip show phishintention | grep Location | awk '{print $2}')
+package_location=$(conda run -n "myenv" pip show /kaggle/working/phishintention | grep Location | awk '{print $2}')
 
 if [ -z "PhishIntention" ]; then
   echo "Package PhishIntention not found in the Conda environment myenv."
