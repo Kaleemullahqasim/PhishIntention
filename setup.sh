@@ -39,7 +39,7 @@ fi
 
 
 # Install other requirements
-pip install -r requirements.txt
+pip install -r /kaggle/working/PhishIntention/requirements.txt
 
 # Install PhishIntention as a package
 pip install -v .
